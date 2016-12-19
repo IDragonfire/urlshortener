@@ -6,7 +6,9 @@ env:
   - "AUTH=true USER=user PASSWORD=pw"
   - "AUTH=false"
 install: npm install
-before_script: npm start
+before_script:
+  - docker build -t ase .
+  - docker run -d -p 4000:4000 -e AUTH=$AUTH -e USER=$USER -e PASSWORD=$PASSWORD ase
 script:
   - npm run lint
   - npm test
