@@ -8,7 +8,7 @@ if(process.env.TRAVIS && process.argv.indexOf('detached') === -1) {
 		console.log('Leaving main process');
 	}, 3000);
 } else {
-    const port = 3000;
+    const port = 4000;
     const app = require('./app.js');
 
     app.listen(port, () => console.log(`Listening on port ${port}!`));
