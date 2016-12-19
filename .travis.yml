@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "6.8"
   - "7"
+services:
+  - docker
 env:
   - "AUTH=true USER=user PASSWORD=pw"
   - "AUTH=false"
