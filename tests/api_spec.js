@@ -1,7 +1,7 @@
 const frisby = require('frisby');
 const trim = require('trim');
 
-let url = 'http://localhost:3000';
+let url = 'http://localhost:4000';
 let targetUrl = 'http://example.com';
 let createLocation = '/create';
 
